@@ -1,0 +1,3 @@
+export const GET_FOOD_INIT = 'GET_FOOD_INIT'
+export const GET_FOOD_SUCCESS = 'GET_FOOD_SUCCESS'
+export const GET_FOOD_ERROR = 'GET_FOOD_ERROR'
