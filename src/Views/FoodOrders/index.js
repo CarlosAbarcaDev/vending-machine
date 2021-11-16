@@ -31,8 +31,7 @@ const FoodOrders = () => {
             key={index}
             className="w-full flex justify-between my-2 border-2 border-green-400 rounded-lg p-5"
           >
-              
-            <div className="w-1/3 flex">
+            <div className="w-full flex justify-center">
               <img
                 src={food.thumbnail}
                 alt="food"
@@ -44,9 +43,7 @@ const FoodOrders = () => {
                 </h1>
               </div>
             </div>
-            <div className="w-1/3 flex justify-end">
-              
-            </div>
+            
           </div>
         );
       })}
