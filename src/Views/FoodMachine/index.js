@@ -24,14 +24,13 @@ const FoodMachine = () => {
   };
 
   //submit order
-  const onSubmitOrder = (order) =>{
-    const submit = () => dispatch(orderData(order));
-    submit()
-  }
-
-  console.log(data);
-  console.log(dataLoading);
-  
+  const onSubmitOrder = (order) => {
+    const time = order.preparation_time * 100;
+    setTimeout(() => {
+      const submit = () => dispatch(orderData(order));
+      submit();
+    }, time);
+  };
 
   return (
     <div className="w-full overflow-auto">
